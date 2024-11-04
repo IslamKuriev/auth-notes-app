@@ -1,0 +1,148 @@
+.main {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.title {
+    margin-bottom: 15px;
+    font-weight: 400;
+    border: 1px solid grey;
+    background: #e0e0e0;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+.notes {
+    display: flex; /* Используем флексбокс для размещения заметок в ряд */
+    flex-wrap: wrap; /* Позволяем заметкам переноситься на следующую строку */
+    gap: 20px; /* Расстояние между заметками */
+    padding: 30px; /* Внутренние отступы контейнера */
+    background-color: #f8f9fa; /* Цвет фона контейнера */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень контейнера */
+    width: 90%;
+    margin-top: 20px;
+}
+.note {
+   background-color: #f9f9f9; 
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: 400px; 
+    max-height: max-content;
+    margin: 20px auto; 
+    transition: transform 0.2s;
+}
+.note:hover {
+    transform: translateY(-5px); /* Подъем заметки при наведении */
+}
+ .btnAction {
+    border: none;
+    padding: 4px 6px;
+    background-color: rgb(227, 224, 224);
+    /* background: none; */
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btnAction:hover {
+    background: rgb(247, 242, 242);
+    border-radius: 7px;
+}
+.note img {
+width: 20px;
+}
+.note p {
+    font-size: 16px; /* Размер текста содержимого */
+    /* color: #555; Цвет текста содержимого */
+    margin-bottom: 20px; /* Отступ внизу содержимого */
+}
+.note h2 {
+    font-size: 24px; /* Размер шрифта заголовка */
+    /* color: #333; Цвет текста заголовка */
+    margin-bottom: 10px; /* Отступ внизу заголовка */
+}
+
+/* Общие стили для input */
+input, textarea {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Стили для заголовка */
+.inputDescribe {
+    font-size: 24px;
+    font-weight: bold;
+    border-color: #6a5acd; /* Цвет границы при обычном состоянии */
+}
+
+.inputDescribe:focus {
+    border-color: #4169e1; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(65, 105, 225, 0.5); /* Легкая тень при фокусе */
+    outline: none;
+}
+
+/* Стили для содержимого */
+textarea {
+    font-size: 16px;
+    height: 150px; /* Высота текстового поля */
+    width: 100%;
+    resize: vertical; /* Возможность изменять размер по вертикали */
+    border-color: #20b2aa; /* Цвет границы при обычном состоянии */
+}
+
+textarea:focus {
+    border-color: #3cb371; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(60, 179, 113, 0.5); /* Легкая тень при фокусе */
+    outline: none;
+}
+.describe {
+    margin: 10px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    background: #3498db;
+    border-radius: 8px;
+}
+.addButton {
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background-color: #45a049; 
+}
+.searchInput {
+    /* margin-top: 30px; */
+    position: absolute;
+    font-size: 17px;
+    margin-top: -25px;
+    font-weight: normal;
+    border-color: #6a5acd; 
+    height: 35px;
+}
+.searchInput:focus {
+    border-color: #4169e1; 
+    box-shadow: 0 0 5px rgba(65, 105, 225, 0.5); 
+    outline: none;
+}
+input[type="color"] {
+    width: 45px; 
+    height: 43px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
