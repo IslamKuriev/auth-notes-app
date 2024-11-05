@@ -1,5 +1,6 @@
 {
-  "name": "auth-app",
+  "name": "auth-app", 
+  "homepage": "https://islamkuriev.github.io/auth-notes-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
